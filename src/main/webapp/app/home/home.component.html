@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-4">
+    <img src="../../content/images/s6.jpg">
+  </div>
+
+  <div class="col-md-8">
+    <h1 class="display-4"><span>Welcome to Self-Prep</span></h1>
+    <h3><span>Subjects</span></h3>
+
+    <p class="lead">You can find the subject-wise resourcses below.</p>
+
+    <div class="subjects-menu">
+      <a *ngFor="let subject of subjects"
+      routerLink="/detail/{{subject.id}}">
+      {{subject.name}}
+      </a>
+    </div>
+
+  </div>
+</div>
